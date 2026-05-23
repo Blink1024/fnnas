@@ -19,7 +19,6 @@
 set +euo pipefail
 
 trap 'exit 0' EXIT
-trap '' HUP INT QUIT TERM PIPE
 
 # Custom service log - all script output will be logged here.
 custom_log="/tmp/ophub_start_service.log"
@@ -216,4 +215,5 @@ fnnas_grub_done="/etc/custom_service/.grub_hdmi_patched"
 
 # Finalization
 log_message "All custom services processed."
+trap '' HUP INT QUIT TERM PIPE
 exit 0
