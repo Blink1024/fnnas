@@ -105,6 +105,7 @@ on:
           - nanopi-m5
           - nanopi-r5c
           - nanopi-r5s
+          - nanopi-r3s
           - nanopi-som
           - nsy-g16-plus
           - nsy-g68-plus
