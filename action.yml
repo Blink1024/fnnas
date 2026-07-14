@@ -14,19 +14,19 @@ inputs:
     default: ""
   fnnas_board:
     description: "Select device board."
-    required: false
-    default: "all"
+    required: true
+    default: "nanopi-r3s"
   kernel_repo:
     description: "Select kernel repository."
     required: false
     default: "ophub/fnnas"
   fnnas_kernel:
     description: "Select kernel version."
-    required: false
+    required: true
     default: "6.1.y_6.12.y"
   auto_kernel:
     description: "Auto use the latest kernel."
-    required: false
+    required: true
     default: "true"
   fnnas_size:
     description: "Set the rootfs size(Unit: MiB)."
